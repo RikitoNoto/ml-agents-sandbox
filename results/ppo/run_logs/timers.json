@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1711627314",
+        "python_version": "3.10.12 (main, Jan 14 2024, 23:28:36) [GCC 9.4.0]",
+        "command_line_arguments": "/mnt/d/projects/Unity/ml-agents-sandbox/venv/bin/mlagents-learn ./RollerBall/config/RollerBall.yaml",
+        "mlagents_version": "1.0.0",
+        "mlagents_envs_version": "1.0.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.2+cu121",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1711627321"
+    },
+    "total": 7.410326295999766,
+    "count": 1,
+    "self": 0.030114150999906997,
+    "children": {
+        "run_training.setup": {
+            "total": 0.09908480400008557,
+            "count": 1,
+            "self": 0.09908480400008557
+        },
+        "TrainerController.start_learning": {
+            "total": 7.281127340999774,
+            "count": 1,
+            "self": 0.0008805510005913675,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.280230121999921,
+                    "count": 1,
+                    "self": 7.280230121999921
+                },
+                "TrainerController._save_models": {
+                    "total": 1.666799926169915e-05,
+                    "count": 1,
+                    "self": 1.666799926169915e-05
+                }
+            }
+        }
+    }
+}
