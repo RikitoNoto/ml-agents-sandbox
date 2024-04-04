@@ -51,7 +51,7 @@ public class PingPongAgent : Agent
 
         if (pos.x < -4.0f) pos.x = -4.0f;
         if (pos.x > 4.0f) pos.x = 4.0f;
-
+        this.transform.localPosition = pos;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)

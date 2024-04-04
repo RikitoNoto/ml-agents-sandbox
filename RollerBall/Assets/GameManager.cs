@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
 
     private void Reset()
     {
-        agents[0].gameObject.transform.localPosition = new Vector3(0.0f, 0.5f, -7.0f);
-        agents[1].gameObject.transform.localPosition = new Vector3(0.0f, 0.5f, 7.0f);
+        agents[0].gameObject.transform.localPosition = new Vector3(0.0f, 0.5f, -4.0f);
+        agents[1].gameObject.transform.localPosition = new Vector3(0.0f, 0.5f, 4.0f);
 
         float speed = 10.0f;
         ball.transform.localPosition = new Vector3(0.0f, 0.25f, 0.0f);
