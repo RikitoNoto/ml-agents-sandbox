@@ -25,15 +25,15 @@ public class RollerAgent : Agent
         target.localPosition = new Vector3(Random.value * 8-4, 0.5f, Random.value * 8-4);
     }
 
-    public override void CollectObservations(VectorSensor sensor){
-        sensor.AddObservation(target.localPosition.x);
-        sensor.AddObservation(target.localPosition.z);
-        sensor.AddObservation(this.transform.localPosition.x);
-        sensor.AddObservation(this.transform.localPosition.z);
+    //public override void CollectObservations(VectorSensor sensor){
+    //    sensor.AddObservation(target.localPosition.x);
+    //    sensor.AddObservation(target.localPosition.z);
+    //    sensor.AddObservation(this.transform.localPosition.x);
+    //    sensor.AddObservation(this.transform.localPosition.z);
 
-        sensor.AddObservation(rBody.velocity.x);
-        sensor.AddObservation(rBody.velocity.z);
-    }
+    //    sensor.AddObservation(rBody.velocity.x);
+    //    sensor.AddObservation(rBody.velocity.z);
+    //}
 
     public override void OnActionReceived(ActionBuffers ActionBuffers){
         Vector3 controlSignal = Vector3.zero;
